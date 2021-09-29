@@ -1,0 +1,18 @@
+.Flexbox {
+  display: flexbox;
+  justify-content: center;
+  margin: auto;
+  overflow-x: auto;
+  position: absolute;
+}
+
+.body {
+  scroll-snap-align: center;
+  overflow-y: scroll;
+  scroll-snap-align: y mandatory;
+  position: relative;
+}
+
+.image {
+  width: 30%;
+}
