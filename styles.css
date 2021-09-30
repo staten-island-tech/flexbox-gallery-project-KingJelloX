@@ -1,18 +1,18 @@
-.Flexbox {
+.parent {
   display: flexbox;
-  justify-content: center;
+  scroll-snap-type: mandatory;
+}
+
+.child {
+  width: 25%;
   margin: auto;
-  overflow-x: auto;
-  position: absolute;
-}
-
-.body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   scroll-snap-align: center;
-  overflow-y: scroll;
-  scroll-snap-align: y mandatory;
-  position: relative;
+  margin-top: 20%;
+  scroll-snap-stop: normal;
 }
-
-.image {
-  width: 30%;
+.Image {
+  width: 100%;
 }
