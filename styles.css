@@ -1,18 +1,10 @@
 .parent {
-  display: flexbox;
-  scroll-snap-type: mandatory;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .child {
-  width: 25%;
-  margin: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  scroll-snap-align: center;
-  margin-top: 20%;
-  scroll-snap-stop: normal;
 }
 .Image {
-  width: 100%;
 }
