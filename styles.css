@@ -1,14 +1,42 @@
+@font-face {
+  font-family: "BeaufortforLOL-Bold";
+  src: url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot"); /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")
+      format("woff2"),
+    /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff")
+      format("woff"),
+    /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf")
+      format("truetype"),
+    /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold")
+      format("svg"); /* iOS 4.1- */
+}
+
 body {
   background-color: rgb(2, 9, 18);
+  margin: auto;
 }
 
 header {
   color: white;
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(20, 20, 20);
   position: sticky;
   display: block;
-  margin-top: 0;
-  height: 10vw;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: "BeaufortforLOL-Bold", serif;
+  text-transform: uppercase;
+  font-style: italic;
+  flex: 1 0 auto;
 }
 
 .parent {
@@ -18,6 +46,7 @@ header {
   justify-content: space-evenly;
   margin: 2%;
   position: relative;
+  column-gap: min(8%);
 }
 
 .child {
@@ -27,6 +56,8 @@ header {
   border-color: rgb(160, 160, 160);
   border-width: 0.1em;
   background-color: rgb(9, 18, 25);
+  width: max(30vw, 400px);
+  height: max(12vw, 150px);
 }
 
 .Image {
@@ -44,12 +75,13 @@ header {
   margin-block-start: 0;
   margin-block-end: 0;
   color: rgb(255, 255, 255);
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: max(1.1rem, 12px);
 }
 
 .description {
   font-family: "Arial Narrow", Arial, sans-serif;
-  font-size: 0.9vw;
   color: rgb(255, 255, 255);
+  font-size: max(0.9rem, 8px);
 }
