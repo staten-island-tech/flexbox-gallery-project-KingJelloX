@@ -1,10 +1,55 @@
+body {
+  background-color: rgb(2, 9, 18);
+}
+
+header {
+  color: white;
+  background-color: rgb(14, 14, 14);
+  position: sticky;
+  display: block;
+  margin-top: 0;
+  height: 10vw;
+}
+
 .parent {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  row-gap: 6vw;
+  justify-content: space-evenly;
+  margin: 2%;
+  position: relative;
 }
 
 .child {
+  width: 30vw;
+  padding: 1vw;
+  border-style: solid;
+  border-color: rgb(160, 160, 160);
+  border-width: 0.1em;
+  background-color: rgb(9, 18, 25);
 }
+
 .Image {
+  width: 8vw;
+  float: left;
+  margin: 1em;
+  border-style: solid;
+  border-color: rgb(203, 169, 103);
+  border-width: 0.4rem;
+}
+
+.ability_name {
+  font-weight: bold;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.1vw;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.description {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9vw;
+  color: rgb(255, 255, 255);
 }
