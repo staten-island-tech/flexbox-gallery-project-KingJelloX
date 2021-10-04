@@ -19,7 +19,6 @@
 
 body {
   background-color: rgb(2, 9, 18);
-
   margin: auto;
 }
 
@@ -51,13 +50,12 @@ header {
 }
 
 .child {
-  width: 30vw;
   padding: 1vw;
   border-style: solid;
   border-color: rgb(160, 160, 160);
   border-width: 0.1em;
   background-color: rgb(9, 18, 25);
-  width: max(30vw, 400px);
+  width: max(20vw, 400px);
   height: max(12vw, 150px);
   position: relative;
 }
@@ -69,7 +67,7 @@ header {
   width: 100%;
   height: 100%;
   background: rgb(100, 100, 100);
-  transition: 0.3s;
+  transition: 0.4s;
   content: "";
   z-index: -1;
 }
