@@ -41,7 +41,24 @@ header {
   width: 5rem;
   height: 100vh;
   position: fixed;
-  position: flex;
+  background-color: rgb(160, 160, 160);
+}
+
+.navbar-child {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-item-link-img {
+  width: 100%;
+}
+
+.navbar:hover {
+  width: 16rem;
 }
 
 .parent {
