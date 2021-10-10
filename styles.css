@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "BeaufortforLOL-Bold";
+  /*font-family: "BeaufortforLOL-Bold";
   src: url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot"); /* IE9*/
   src: url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")
       format("embedded-opentype"),
@@ -40,7 +40,8 @@ header {
   text-align: center;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-family: "BeaufortforLOL-Bold";
+  font-family: darkmode-off, sans-serif;
+  font-weight: 800;
   font-size: max(2rem, 2.5vw);
   text-transform: uppercase;
   font-style: italic;
@@ -59,7 +60,7 @@ header {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 800ms ease;
+  transition: background-position 900ms ease;
 }
 
 #Header:hover {
@@ -105,8 +106,8 @@ header {
 .navbar-item-link-text {
   display: none;
   margin-left: 1rem;
-  font-family: "BeaufortforLOL-Bold";
-  font-weight: 600;
+  font-family: darkmode-off, sans-serif;
+  font-weight: 700;
   color: black;
 }
 
@@ -192,13 +193,14 @@ header {
   margin-block-end: 0;
   color: rgb(255, 255, 255);
   font-size: 1.2vw;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: darkmode-off, sans-serif;
   font-size: max(1.1rem, 12px);
   margin-bottom: 1rem;
 }
 
 .child-description {
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: darkmode-off, sans-serif;
+  font-weight: 300;
   color: rgb(255, 255, 255);
   font-size: max(0.9rem, 8px);
 }
