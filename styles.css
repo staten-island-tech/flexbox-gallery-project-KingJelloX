@@ -16,15 +16,24 @@
       url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold")
       format("svg"); /* iOS 4.1- */
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 12rem;
 }
+
 body {
   background-color: rgb(2, 9, 18);
   margin: 0;
   scroll-padding-top: 5rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.intro-page {
+  width: 100vw;
+  height: 200vh;
 }
 
 header {
@@ -110,7 +119,7 @@ header {
   row-gap: 10vw;
   justify-content: space-evenly;
   position: relative;
-  column-gap: min(8vw);
+  column-gap: min(6vw);
   margin-top: 5%;
   margin-bottom: 7%;
   margin-left: 5rem;
@@ -172,4 +181,95 @@ header {
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-size: max(0.9rem, 8px);
+}
+
+.load_page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: load 2s 1;
+  animation-fill-mode: forwards;
+}
+.icon-loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: icon-loader 2s infinite ease;
+}
+
+.icon-loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: icon-loader-inner 2s infinite ease-in;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  99.88% {
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
+
+@keyframes icon-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icon-loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
 }
