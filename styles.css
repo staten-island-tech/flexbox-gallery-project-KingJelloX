@@ -179,8 +179,10 @@ header {
   border-width: 0.5em;
 }
 
-.child-image:hover {
+.child:hover .child-image {
   border-color: rgb(28, 186, 220);
+  transform: translateY(-1.7rem) scale(1.2);
+  transition: transform 400ms ease;
 }
 
 .child-ability {
