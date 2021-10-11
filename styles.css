@@ -369,6 +369,10 @@ header {
   #League-icon {
     display: none;
   }
+
+  .intro-video {
+    height: fit-content;
+  }
 }
 
 /* Large Screen */
