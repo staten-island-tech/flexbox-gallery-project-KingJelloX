@@ -25,10 +25,9 @@ html {
 body {
   background-color: rgb(246, 246, 246);
   margin: 0;
-  scroll-padding-top: 5rem;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
@@ -42,7 +41,7 @@ header {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-family: darkmode-off, sans-serif;
-  font-weight: 800;
+  font-weight: bolder;
   font-size: max(1.5rem, 2vw);
   text-transform: uppercase;
   font-style: italic;
@@ -82,12 +81,61 @@ header {
   font-family: darkmode-off, sans-serif;
   position: absolute;
   color: #fff;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: capitalize;
-  font-size: 5vw;
-  word-break: keep-all;
+  font-size: 7vw;
 }
 
+.intro-video {
+  height: auto;
+}
+
+.parallax-container {
+  height: 130vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.parallax {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.parallax-background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: -20%;
+  left: 0;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.normal {
+  z-index: 2;
+}
+
+.parallax-text {
+  z-index: 2;
+  font-family: darkmode-off, sans-serif;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 7vw;
+}
+
+.ahri {
+  background: url("/img/beautiful-ahri-kda-all-out-lol-1-hd-wallpaper-1920x1080-uhdpaper.com-804.1_a.jpg")
+    center / cover;
+}
 /*-Nav Bar-------------------*/
 .navbar {
   position: fixed;
@@ -163,7 +211,7 @@ header {
   justify-content: space-evenly;
   position: relative;
   column-gap: min(6vw);
-  margin-top: 5%;
+  margin-top: 50%;
   margin-bottom: 7%;
   margin-left: 5rem;
   padding-top: 0;
@@ -176,7 +224,6 @@ header {
   position: relative;
   width: clamp(250px, 18%, 23%);
   aspect-ratio: 1/1;
-  box-shadow: 50px 50px 30px rgba(41, 41, 41, 0.493);
 }
 
 .child::after {
@@ -188,7 +235,8 @@ header {
   transition: 0.4s;
   content: "";
   z-index: -1;
-  background-color: rgb(160, 160, 160);
+  background-color: rgb(196, 153, 74);
+  box-shadow: 40px 40px 20px rgba(0, 0, 0, 0.493);
 }
 
 .child:hover::after {
