@@ -70,12 +70,12 @@ header {
 
 .intro {
   width: 100vw;
-  height: 118.1vh;
   overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-y: visible;
 }
 
 .intro-text {
@@ -368,10 +368,6 @@ header {
 
   #League-icon {
     display: none;
-  }
-
-  .intro-video {
-    height: fit-content;
   }
 }
 
