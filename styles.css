@@ -61,7 +61,7 @@ header {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 900ms ease;
+  transition: background-position 600ms ease;
 }
 
 #Header:hover {
@@ -84,7 +84,7 @@ header {
   color: #fff;
   font-weight: 800;
   text-transform: capitalize;
-  font-size: 5rem;
+  font-size: 5vw;
   word-break: keep-all;
 }
 
@@ -135,9 +135,19 @@ header {
   margin-left: 1rem;
 }
 
+#League-icon {
+  height: 3vw;
+  transform: rotate(0deg);
+  transition: transform 500ms;
+}
+
 .navbar:hover {
   filter: grayscale(0) opacity(1);
   border-right-color: rgb(20, 143, 172);
+}
+
+.navbar:hover #League-icon {
+  transform: rotate(360deg);
 }
 
 .navbar-item-link:hover {
@@ -166,6 +176,7 @@ header {
   position: relative;
   width: clamp(250px, 18%, 23%);
   aspect-ratio: 1/1;
+  box-shadow: 50px 50px 30px rgba(41, 41, 41, 0.493);
 }
 
 .child::after {
@@ -217,7 +228,7 @@ header {
 
 .child-description {
   font-family: darkmode-off, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   color: rgb(255, 255, 255);
   font-size: max(0.9rem, 8px);
 }
@@ -323,6 +334,10 @@ header {
   .navbar {
     display: none;
   }
+
+  #League-icon {
+    display: none;
+  }
 }
 /* Medium Screen*/
 @media screen and (max-width: 1300px) {
@@ -349,6 +364,10 @@ header {
   .navbar-item-link-img {
     margin: 0;
     width: 3.5rem;
+  }
+
+  #League-icon {
+    display: none;
   }
 }
 
