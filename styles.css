@@ -83,7 +83,7 @@ header {
   color: #fff;
   font-weight: 900;
   text-transform: capitalize;
-  font-size: max(2.3rem, 8vw);
+  font-size: max(1.5rem, 8vw);
 }
 
 .intro-video {
@@ -129,7 +129,7 @@ header {
   color: #fff;
   font-weight: bolder;
   text-transform: capitalize;
-  font-size: max(2.3rem, 8vw);
+  font-size: max(1.5rem, 8vw);
 }
 
 .ahri {
@@ -377,7 +377,7 @@ header {
 @media screen and (max-width: 500px) {
   .parent {
     margin-left: 0;
-    margin-top: 120%;
+    margin-top: 220%;
   }
 
   .navbar {
