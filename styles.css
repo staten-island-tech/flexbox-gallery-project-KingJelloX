@@ -203,6 +203,7 @@ header {
   background-color: rgb(38, 38, 38);
   border-width: 2px;
 }
+
 /*-Content-------------------*/
 .parent {
   display: flex;
@@ -425,7 +426,9 @@ header {
   body {
     font-size: 16px;
   }
-
+  header {
+    font-size: max(2.5vw);
+  }
   .navbar {
     width: 5rem;
     height: 100vh;
