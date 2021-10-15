@@ -1,25 +1,10 @@
-@font-face {
-  /*font-family: "BeaufortforLOL-Bold";
-  src: url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot"); /* IE9*/
-  src: url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")
-      format("woff2"),
-    /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff")
-      format("woff"),
-    /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf")
-      format("truetype"),
-    /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold")
-      format("svg"); /* iOS 4.1- */
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 12rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
@@ -155,12 +140,12 @@ header {
 
 .navbar-item {
   width: 100%;
-  height: 5rem;
+  height: 10rem;
 }
 
 .navbar-item-link {
   display: flex;
-  height: 5rem;
+  height: 10rem;
   text-decoration: none;
   align-items: center;
   filter: grayscale(100%) opacity(0.8);
@@ -178,7 +163,7 @@ header {
 }
 
 .navbar-item-link-img {
-  width: 3rem;
+  width: 5rem;
   border-radius: 2.5rem;
   margin-left: 1rem;
 }
@@ -214,7 +199,7 @@ header {
   column-gap: min(6vw);
   margin-top: 50%;
   margin-bottom: 7%;
-  margin-left: 5rem;
+  margin-left: 10rem;
   padding-top: 0;
   padding: 4rem;
 }
@@ -430,7 +415,7 @@ header {
     font-size: max(2.5vw);
   }
   .navbar {
-    width: 5rem;
+    width: 10rem;
     height: 100vh;
   }
 
