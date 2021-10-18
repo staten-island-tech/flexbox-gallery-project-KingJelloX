@@ -1,4 +1,4 @@
-* {
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 12rem;
   padding: 0;
@@ -23,11 +23,11 @@ header {
   top: 0;
   z-index: 1;
   text-align: center;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding-top: 0.1vh;
+  padding-bottom: 0.1vh;
   font-family: darkmode-off, sans-serif;
   font-weight: bolder;
-  font-size: max(1.5rem, 2vw);
+  font-size: max(2rem, 1.5vw);
   text-transform: uppercase;
   font-style: italic;
 }
@@ -409,7 +409,7 @@ header {
     font-size: 16px;
   }
   header {
-    font-size: max(2.5vw);
+    font-size: max(1.5vw);
   }
   .navbar {
     width: 10rem;
