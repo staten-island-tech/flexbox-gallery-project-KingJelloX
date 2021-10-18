@@ -150,8 +150,6 @@ header {
   align-items: center;
   filter: grayscale(100%) opacity(0.8);
   transition: 500ms;
-  border-width: 10px;
-  border-right-color: rgb(20, 143, 172);
 }
 
 .navbar-item-link-text {
@@ -165,7 +163,7 @@ header {
 .navbar-item-link-img {
   width: 5rem;
   border-radius: 2.5rem;
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
 #League-icon {
@@ -176,7 +174,6 @@ header {
 
 .navbar:hover {
   filter: grayscale(0) opacity(1);
-  border-right-color: rgb(20, 143, 172);
 }
 
 .navbar:hover #League-icon {
@@ -214,8 +211,8 @@ header {
 
 .child::after {
   position: absolute;
-  top: 1rem;
-  right: -1rem;
+  top: 2rem;
+  right: -2rem;
   width: 100%;
   height: 100%;
   transition: 0.4s;
@@ -226,9 +223,9 @@ header {
 }
 
 .child:hover::after {
-  top: -1rem;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
+  top: -2rem;
+  width: calc(100% + 4rem);
+  height: calc(100% + 4rem);
 }
 
 .child-image {
@@ -254,9 +251,8 @@ header {
   margin-block-start: 0;
   margin-block-end: 0;
   color: rgb(255, 255, 255);
-  font-size: 1.2vw;
   font-family: darkmode-off, sans-serif;
-  font-size: max(1.1rem, 12px);
+  font-size: max(1.5rem, 1.2vw);
   margin-bottom: 1rem;
 }
 
@@ -264,7 +260,7 @@ header {
   font-family: darkmode-off, sans-serif;
   font-weight: 500;
   color: rgb(255, 255, 255);
-  font-size: max(0.9rem, 8px);
+  font-size: 1.2rem;
 }
 
 /*-Page Loader-------------------*/
@@ -284,10 +280,10 @@ header {
 }
 .icon-loader {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   position: relative;
-  border: 4px solid #fff;
+  border: 0.4rem solid #fff;
   animation: icon-loader 2s infinite ease;
 }
 
@@ -384,7 +380,7 @@ header {
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 10rem;
     overflow-x: scroll;
   }
   .navbar-child {
@@ -398,7 +394,8 @@ header {
 
   .navbar-item-link-img {
     margin: 0;
-    width: 3.5rem;
+    width: 5rem;
+    padding: 0;
   }
 
   #League-icon {
@@ -420,7 +417,7 @@ header {
   }
 
   .navbar:hover {
-    width: 14rem;
+    width: 22rem;
   }
 
   .navbar:hover .navbar-item-link-text {
